@@ -1,0 +1,252 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #dc3545;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.btn-group {
+    margin-left: auto;
+}
+
+.btn-nav {
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    color: #6c757d;
+    transition: color 0.3s;
+}
+
+.btn-nav.active,
+.btn-nav:hover {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel-item {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1.carousel-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p.carousel-text {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Flex section */
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.quote-section img {
+    max-width: 50%;
+    border-radius: 15px;
+}
+
+.quote-section .quote {
+    max-width: 45%;
+    font-size: 1.5rem;
+    color: #6c757d;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Cards section */
+.card-section {
+    padding: 60px 0;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: #dc3545;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+/* Image Section after Cards */
+.image-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.02);
+}
+
+.image-section h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.image-section p {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .quote-section {
+        flex-direction: column;
+    }
+
+    .quote-section img {
+        max-width: 80%;
+    }
+
+    .quote-section .quote {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+
+.counter-section {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.counter-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.counter-box:hover {
+    transform: translateY(-10px);
+}
+
+.counter-number {
+    font-size: 3rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.counter-label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes count {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.counter-number {
+    animation: count 1.5s ease-in-out forwards;
+}
+
+.counter-box:nth-child(1) .counter-number {
+    animation-delay: 0s;
+}
+
+.counter-box:nth-child(2) .counter-number {
+    animation-delay: 0.3s;
+}
+
+.counter-box:nth-child(3) .counter-number {
+    animation-delay: 0.6s;
+}
+
+.counter-box:nth-child(4) .counter-number {
+    animation-delay: 0.9s;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bloodline - Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/abb3d73d39.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Blood<span>line</span></a>
+            <div class="btn-group">
+                <button class="btn-nav" id="homeBtn">Home</button>
+                <button class="btn-nav " id="developerBtn">Developers</button>
+                <button class="btn-nav active" id="contactBtn">Contact Us</button>
+                <button class="btn-nav " id="signupBtn">Sign Up</button>
+                <button class="btn-nav" id="loginBtn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-section container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="form-container">
+            <img src="./pics/contact-pic.jpg" alt="Contact Us">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="query">Query:</label>
+                    <textarea id="query" class="form-control" placeholder="Your Query" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="reach-us-section container">
+        <h2>Reach Us</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750517.5864517696!2d75.4106475!3d31.026816300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0x8fbd263103a38861!2sPunjab!5e0!3m2!1sen!2sin!4v1727855626929!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-info mt-5">
+            <p>Address: Punjab, India</p>
+            <p>Email: support@bloodline.com | Phone: +91 98765-XXXXX</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bloodline. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="./policy.html">Privacy Policy</a> |
+            <a href="./policy.html">Terms of Service</a> |
+            <a href="./contactus.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/contact.js"></script>
+    <script src="./script/routes.js"></script>
+</body>
+
+</html>
